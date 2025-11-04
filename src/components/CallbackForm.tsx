@@ -19,20 +19,43 @@ const CallbackForm: React.FC<CallbackFormProps> = ({
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-      setFormData({ name: '', phone: '' });
+    try {
+      // Prepare form data for Web3Forms
+      const formDataWeb3 = new FormData();
+      formDataWeb3.append("access_key", "f35ff6dd-1f0a-4bc3-acd9-7cf97496599d");
+      formDataWeb3.append("name", formData.name);
+      formDataWeb3.append("phone", formData.phone);
+      formDataWeb3.append("subject", "New Callback Request");
+      formDataWeb3.append("from_name", "Anshu Safety Nets Callback Form");
       
-      // Reset success message after 3 seconds
-      setTimeout(() => setIsSuccess(false), 3000);
-    }, 1000);
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataWeb3,
+      });
+
+      const result = await response.json();
+      
+      if (result.success) {
+        setIsSuccess(true);
+        setFormData({ name: '', phone: '' });
+        // Reset success message after 5 seconds
+        setTimeout(() => setIsSuccess(false), 5000);
+      } else {
+        setError("Failed to submit form. Please try again.");
+      }
+    } catch (err) {
+      setError("An error occurred. Please try again.");
+      console.error("Form submission error:", err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -93,6 +116,10 @@ const CallbackForm: React.FC<CallbackFormProps> = ({
             />
           </div>
         </div>
+
+        {error && (
+          <div className="text-red-500 text-sm text-center py-2">{error}</div>
+        )}
 
         <motion.button
           type="submit"
