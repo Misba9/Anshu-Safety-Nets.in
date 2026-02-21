@@ -40,8 +40,8 @@ const Hero = () => {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight"
               >
-                Balcony Safety Nets
-                <span className="block text-blue-600">Installation in Bengaluru</span>
+                Safety Nets in Bengaluru
+                <span className="block text-blue-600">Professional Installation Services</span>
               </motion.h1>
 
               <motion.p

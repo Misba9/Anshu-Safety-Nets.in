@@ -45,13 +45,13 @@ const PigeonSafetyNetsBlog = () => {
           name="description" 
           content="Learn why pigeon safety nets are essential for modern homes. Protect your health, property, and peace of mind with durable bird net installations. Expert solutions for pigeon control in apartments." 
         />
-        <link rel="canonical" href="https://www.pegionsafetynets.in/blog/why-pigeon-safety-nets-are-a-must-have-for-modern-homes" />
+        <link rel="canonical" href="https://www.anshusafetynets.in/blog/why-pigeon-safety-nets-are-a-must-have-for-modern-homes" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="Why Pigeon Safety Nets are a Must-Have for Every Modern Home | Protect Your Space Today" />
         <meta property="og:description" content="Learn why pigeon safety nets are essential for modern homes. Protect your health, property, and peace of mind with durable bird net installations. Expert solutions for pigeon control in apartments." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.pegionsafetynets.in/blog/why-pigeon-safety-nets-are-a-must-have-for-modern-homes" />
+        <meta property="og:url" content="https://www.anshusafetynets.in/blog/why-pigeon-safety-nets-are-a-must-have-for-modern-homes" />
         <meta property="og:image" content="/images/blog1.jpeg" />
         <meta property="og:site_name" content="Anshu Safety Nets" />
         

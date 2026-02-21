@@ -34,7 +34,7 @@ const BlogIndex = () => {
           name="description" 
           content="Learn about safety net solutions, installation tips, and expert insights on protecting your home and family." 
         />
-        <link rel="canonical" href="https://www.pegionsafetynets.in/blog" />
+        <link rel="canonical" href="https://www.anshusafetynets.in/blog" />
       </Helmet>
 
       {/* Hero Section */}

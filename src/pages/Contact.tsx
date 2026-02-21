@@ -82,7 +82,7 @@ const Contact = () => {
           name="description"
           content="Professional Balcony, Pigeon, Children and Industrial Safety Nets Installation services in Bengaluru. Request a Callback Today."
         />
-        <link rel="canonical" href="https://www.pegionsafetynets.in/contact" />
+        <link rel="canonical" href="https://www.anshusafetynets.in/contact" />
       </Helmet>
 
       {/* Hero Section */}

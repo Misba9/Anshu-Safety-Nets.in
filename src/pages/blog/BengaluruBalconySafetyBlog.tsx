@@ -45,13 +45,13 @@ const BengaluruBalconySafetyBlog = () => {
           name="description" 
           content="Comprehensive guide for Bengaluru homeowners on balcony safety nets. Compare HDPE vs nylon, understand installation best practices, and make informed decisions for your family's safety." 
         />
-        <link rel="canonical" href="https://www.pegionsafetynets.in/blog/bengaluru-homeowners-guide-to-balcony-safety" />
+        <link rel="canonical" href="https://www.anshusafetynets.in/blog/bengaluru-homeowners-guide-to-balcony-safety" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="The Bengaluru Homeowner's Guide to Balcony Safety: A Definitive Resource for Net Types and Installation | Anshu Safety Nets" />
         <meta property="og:description" content="Comprehensive guide for Bengaluru homeowners on balcony safety nets. Compare HDPE vs nylon, understand installation best practices, and make informed decisions for your family's safety." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://www.pegionsafetynets.in/blog/bengaluru-homeowners-guide-to-balcony-safety" />
+        <meta property="og:url" content="https://www.anshusafetynets.in/blog/bengaluru-homeowners-guide-to-balcony-safety" />
         <meta property="og:image" content="/images/blog2.jpeg" />
         <meta property="og:site_name" content="Anshu Safety Nets" />
         
